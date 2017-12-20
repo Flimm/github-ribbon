@@ -357,8 +357,9 @@ class GithubRibbon {
     function gr_github_url_callback() {
         $options = $this->get_ribbon_options();
         echo "<input id='github-url' name='github-ribbon-options[github-url]' size='40' type='text' value='{$options['github-url']}' ><br>";
-        echo "<input id='ribbon-new-tab' name='github-ribbon-options[ribbon-new-tab]' type='checkbox' value='true' ", checked('true', $options['ribbon-new-tab']), " > ";
+        echo "<label><input id='ribbon-new-tab' name='github-ribbon-options[ribbon-new-tab]' type='checkbox' value='true' ", checked('true', $options['ribbon-new-tab']), " > ";
         _e('Open in new tab', 'github-ribbon');
+	echo "</label>";
     }
 
     /**
